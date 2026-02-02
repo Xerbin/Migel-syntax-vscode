@@ -1,0 +1,47 @@
+{
+  "name": "migel-syntax",
+  "displayName": "Migel",
+  "description": "Syntax highlighting for Migel (experimental)",
+  "publisher": "Xerbin",
+  "version": "1.1.0",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:migel"
+  ],
+  "main": "./extension.js",
+  "icon": "./logo.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "migel",
+        "aliases": [
+          "Migel",
+          "migel"
+        ],
+        "extensions": [
+          ".migel",
+          ".mig"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "migel",
+        "scopeName": "source.migel",
+        "path": "./syntaxes/migel.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "migel",
+        "path": "./snippets/migel.code-snippets"
+      }
+    ]
+  }
+}
