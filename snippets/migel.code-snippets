@@ -1,0 +1,56 @@
+{
+  "loop snippet": {
+    "prefix": "loop",
+    "body": [
+      "loop(${1:count}) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "Migel loop"
+  },
+    "while snippet": {
+    "prefix": "loop",
+    "body": [
+      "while(${1:condition}) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "Migel loop"
+  },
+  "fn snippet": {
+    "prefix": "fn",
+    "body": [
+      "fn ${1:name}(${2:params}) {",
+      "\t$3",
+      "}"
+    ],
+    "description": "Migel function"
+  },
+    "if snippet": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$3",
+      "}"
+    ],
+    "description": "Migel function"
+  },
+    "elif snippet": {
+    "prefix": "elif",
+    "body": [
+      "elif (${1:condition}) {",
+      "\t$3",
+      "}"
+    ],
+    "description": "Migel function"
+  },
+    "else snippet": {
+    "prefix": "else",
+    "body": [
+      "else {",
+      "\t$3",
+      "}"
+    ],
+    "description": "Migel function"
+  }
+}

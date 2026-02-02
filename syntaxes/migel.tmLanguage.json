@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Migel",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#types" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#comments" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [{
+        "name": "keyword.control.migel",
+        "match": "\\b(write|read|loop|fn|ret|if|elif|else|import|from|as|excpection|while)\\b"
+      }]
+    },
+    "types": {
+      "patterns": [{
+        "name": "storage.type.migel",
+        "match": "\\b(index)\\b"
+      }]
+    },
+    "strings": {
+      "name": "string.quoted.double.migel",
+      "begin": "\"",
+      "end": "\""
+    },
+    "numbers": {
+      "name": "constant.numeric.migel",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    "comments": {
+      "name": "comment.line.double-slash.migel",
+      "match": "//.*$"
+    }
+  },
+  "scopeName": "source.migel"
+}
